@@ -1,0 +1,11 @@
+version: v2
+
+modules:
+  - path: proto
+    name: gitlab.com/grpc-learn/protoc-files
+    lint:
+      use:
+        - DEFAULT
+    breaking:
+      use:
+        - FILE
