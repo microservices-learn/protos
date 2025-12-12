@@ -7,6 +7,7 @@
 package greetv1
 
 import (
+	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -113,14 +114,14 @@ var File_greeter_greet_v1_greeter_proto protoreflect.FileDescriptor
 
 const file_greeter_greet_v1_greeter_proto_rawDesc = "" +
 	"\n" +
-	"\x1egreeter/greet/v1/greeter.proto\x12\x18greeter_service.greet.v1\"\"\n" +
+	"\x1egreeter/greet/v1/greeter.proto\x12\x18greeter_service.greet.v1\x1a\x1cgoogle/api/annotations.proto\"\"\n" +
 	"\fHelloRequest\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\"&\n" +
 	"\n" +
 	"HelloReply\x12\x18\n" +
-	"\amessage\x18\x01 \x01(\tR\amessage2c\n" +
-	"\aGreeter\x12X\n" +
-	"\bSayHello\x12&.greeter_service.greet.v1.HelloRequest\x1a$.greeter_service.greet.v1.HelloReplyBLZJgitlab.com/grpc-learn/protoc-files/gen/go/greeter_service/greet/v1;greetv1b\x06proto3"
+	"\amessage\x18\x01 \x01(\tR\amessage2\x85\x01\n" +
+	"\aGreeter\x12z\n" +
+	"\bSayHello\x12&.greeter_service.greet.v1.HelloRequest\x1a$.greeter_service.greet.v1.HelloReply\" \x82\xd3\xe4\x93\x02\x1a:\x01*\"\x15/v1/greeter/say-helloBLZJgitlab.com/grpc-learn/protoc-files/gen/go/greeter_service/greet/v1;greetv1b\x06proto3"
 
 var (
 	file_greeter_greet_v1_greeter_proto_rawDescOnce sync.Once
